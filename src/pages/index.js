@@ -1,3 +1,4 @@
 import RegisterPage from "./Register";
+import AutoPage from "./Auto";
 
-export {RegisterPage};
+export {RegisterPage, AutoPage};
