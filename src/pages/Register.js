@@ -10,7 +10,7 @@ const RegisterPage = () =>{
                 </div>
             </div>
             <TableUserComponent/><br/> <hr/> <br/>
-            <ButtomComponent/>        
+            <ButtomComponent InfoBoton={"Ir a registrar auto"}/>        
         </div>
     )
 } 

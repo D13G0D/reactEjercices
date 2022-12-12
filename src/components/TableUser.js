@@ -9,6 +9,7 @@ const TableUserComponent = () => {
             <th scope="col">Nombre</th>
             <th scope="col">Apellido</th>
             <th scope="col">Correo</th>
+            <th scope="col">Acciones</th>
           </tr>
         </thead>
         <tbody>
@@ -17,15 +18,26 @@ const TableUserComponent = () => {
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th scope="row"></th>
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
           </tr>
           <tr>
             <th scope="row"></th>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>

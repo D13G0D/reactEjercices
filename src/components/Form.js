@@ -49,7 +49,7 @@ const FormsUserComponent = () => {
                         </label>
                     </div> <br />
                 </div>
-                <a href="#" class="btn btn-secondary">Registrarse</a>
+                <button class="btn btn-secondary">Registrarse</button>
             </div>
         </div>
     )

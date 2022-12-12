@@ -12,6 +12,7 @@ const TableCarComponent = () => {
       <th scope="col">Color</th>
       <th scope="col">Cilindraje motor</th>
       <th scope="col">Version</th>
+      <th scope="col">Acciones</th>
 
     </tr>
   </thead>
@@ -24,6 +25,17 @@ const TableCarComponent = () => {
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <th></th>
@@ -33,9 +45,11 @@ const TableCarComponent = () => {
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
       <th></th>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>

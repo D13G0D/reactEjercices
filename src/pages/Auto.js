@@ -1,5 +1,5 @@
 import React from "react";
-import { FormCarComponent, TableCarComponent,} from "../components";
+import { FormCarComponent, TableCarComponent,ButtomComponent} from "../components";
 
 const AutoPage = () =>{
     return(
@@ -9,7 +9,8 @@ const AutoPage = () =>{
             <FormCarComponent/> 
                 </div>
             </div>
-            <TableCarComponent/><br/> <hr/> <br/>  
+            <TableCarComponent/><br/> <hr/> <br/>
+            <ButtomComponent InfoBoton={"Registrar Usuario"}/>    
         </div>
     )
 } 

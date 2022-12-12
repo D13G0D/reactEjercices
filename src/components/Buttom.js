@@ -1,9 +1,9 @@
 import React from "react";
 
-const ButtomComponent = () => {
+const ButtomComponent = ({InfoBoton}) => {
     return (
         <button variant="outlined">
-            Siguiente
+            {InfoBoton}
         </button>
     )
 }
