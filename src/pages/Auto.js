@@ -1,16 +1,17 @@
-import React from "react";
-import { FormCarComponent, TableCarComponent,ButtomComponent} from "../components";
+import React, { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
+import { FormCarComponent,ButtomComponent} from "../components";
 
 const AutoPage = () =>{
+        const navigate = useNavigate();
+        const handleOnClick = useCallback(()=>navigate("/",{}, [navigate]));
+        const ListaAutosClick = useCallback(()=>navigate("/ListaAutos",{}, [navigate]));
+
     return(
-        <div>
-            <div class="row">
-                <div class="col">
-            <FormCarComponent/> 
-                </div>
-            </div>
-            <TableCarComponent/><br/> <hr/> <br/>
-            <ButtomComponent InfoBoton={"Registrar Usuario"}/>    
+        <div>           
+            <FormCarComponent/>           
+            <ButtomComponent InfoBoton={" Ir a registrar Usuario"} handleOnClick={handleOnClick}/>
+            <ButtomComponent InfoBoton={" Ir a Lista de autos"} handleOnClick={ListaAutosClick}/>       
         </div>
     )
 } 

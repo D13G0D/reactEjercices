@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AutoPage, RegisterPage } from "./pages";
+import { AutoListaPage, AutoPage, RegisterPage, UsuarioListaPage } from "./pages";
 
 const App = () => {
   return (
@@ -8,6 +8,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<RegisterPage/>} />
         <Route path="/Auto" element={<AutoPage/>} />
+        <Route path="/ListaUsuarios" element={<UsuarioListaPage/>} />
+        <Route path="/ListaAutos" element={<AutoListaPage/>} />
       </Routes>
     </BrowserRouter>
   )
