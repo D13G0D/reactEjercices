@@ -1,6 +1,7 @@
 import React from "react";
+import ButtomComponent from "./Buttom";
 
-const TableUserComponent = () => {
+const TableUserComponent = ({usuarios, userDelete}) => {
     return(
         <table class="table table-bordered border-secundary table-striped table-hover">
         <thead>
@@ -13,34 +14,27 @@ const TableUserComponent = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th></th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+          {usuarios.map(usuario=>(
+            <tr>
+            <td>{usuario.ID}</td>
+            <td>{usuario.Nombre}</td>
+            <td>{usuario.Apellido}</td>
+            <td>{usuario.Correo}</td>
+            <td>
+            <button
+                  type="button"
+                  class="btn btn-primary"
+                  onClick={() => {
+                    userDelete(usuario.ID);
+                  }}
+                >
+                 Eliminar
+                </button>
+
+            </td>
           </tr>
-          <tr>
-            <th scope="row"></th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+          ))}
+          
         </tbody>
       </table> 
     )

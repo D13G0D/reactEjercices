@@ -35,7 +35,7 @@ const FormsUserComponent = () => {
                 </div>
                 <div class="form-floating mb-3"style={{opacity:"30%"}}>
                     <input type="email" class="form-control" id="floatingInput" placeholder="name@ejemplo.com" />
-                    <label for="floatingInput">Correo electronico</label> <br />
+                    <label for="floatingInput">Correo</label> <br />
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                         <label class="form-check-label" for="flexCheckDefault">
